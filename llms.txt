@@ -1,0 +1,36 @@
+# Video To Audio & Mp3 Cutter
+
+> Android app by FightTech that extracts the audio from a video file on the phone and saves it as MP3, AAC (M4A), OPUS, WAV or M4R, with an audio studio for cutting, joining, mixing and editing sound. Free on Google Play for Android 8.0 and newer; some tools and 320 kbps quality use credits or Premium.
+
+Key facts, stated as the app actually behaves:
+
+- Package: com.videomp4tomp3.mp3converter.mp3videoconverter — https://play.google.com/store/apps/details?id=com.videomp4tomp3.mp3converter.mp3videoconverter
+- Media conversion runs on the device; video and audio files are not uploaded to convert them. Ads, analytics, crash reports and Google Play purchases do use the internet, so the app is not fully offline.
+- Output formats: MP3, AAC (M4A), OPUS (Android 10 and newer), WAV (uncompressed, about 10 MB per minute) and M4R (AAC with the iPhone ringtone extension).
+- MP3 bitrates: 64, 96, 128, 160, 192 (default) and 256 kbps; 320 kbps costs one credit per file on the free plan and is included with Premium. The last settings are remembered; saving named presets is Premium. Sample rate and mono/stereo can be kept as the source or set by hand.
+- "Extract original audio (no re-encoding)" copies the video's audio stream as is (Premium).
+- Audio studio tools: Cut audio, Convert audio, Join audio, Volume boost, Audio mixer, Audio speed, Split file, Multi-cut, Voice changer, Karaoke (reduces centred vocals in stereo songs). Trim silence, fade in/out and normalize loudness are options on the export screen.
+- The result screen can play the file, share it, set it as a ringtone and open recent files. Long jobs can continue in the background.
+- Smart export profiles (arriving in the next app update): Music archive (MP3 320 kbps, stereo, 44.1 kHz), Podcast / voice (96 kbps, mono, 48 kHz, normalized), Ringtone (192 kbps, stereo, normalized, short fades), Quick share (64 kbps, mono, normalized).
+- Interface languages include English and Vietnamese.
+- Users are responsible for only converting media they have the right to use.
+
+## Guides
+
+- [How to convert video to MP3 on Android without uploading it](https://videomp4tomp3.fighttech.vn/blog/en/convert-video-to-mp3-android.html): six steps from a video to an MP3 — trim, pick a format and bitrate, save, then play, share or set a ringtone.
+- [Which MP3 bitrate should you use? 320, 192, 96 or 64 kbps](https://videomp4tomp3.fighttech.vn/blog/en/mp3-bitrate-guide.html): file size per minute, why a higher bitrate cannot fix the source, mono vs stereo, 44.1 vs 48 kHz, and the four export profiles.
+- [Cách chuyển video sang MP3 trên Android (tiếng Việt)](https://videomp4tomp3.fighttech.vn/blog/cach-chuyen-video-sang-mp3-tren-android.html)
+- [Nên chọn bitrate MP3 bao nhiêu? (tiếng Việt)](https://videomp4tomp3.fighttech.vn/blog/nen-chon-bitrate-mp3-bao-nhieu.html)
+
+## App pages
+
+- [Home](https://videomp4tomp3.fighttech.vn/): features, supported formats and FAQ
+- [Download](https://videomp4tomp3.fighttech.vn/download.html)
+- [Support](https://videomp4tomp3.fighttech.vn/support.html): contact fighttech.vn@gmail.com
+- [Privacy policy](https://videomp4tomp3.fighttech.vn/privacy.html)
+- [Terms of use](https://videomp4tomp3.fighttech.vn/terms.html)
+
+## Optional
+
+- [Blog index](https://videomp4tomp3.fighttech.vn/blog/)
+- [FightTech](https://fighttech.vn): the developer

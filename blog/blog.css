@@ -1,0 +1,143 @@
+/* Blog article layout — loaded after css/style.css, reuses its tokens. */
+
+.post-wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+
+.post-head { padding: 40px 0 8px; }
+.crumbs { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); }
+.crumbs span[aria-hidden] { opacity: .5; }
+
+.post-kicker {
+  display: inline-block; margin: 18px 0 10px; padding: 5px 12px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent-deep, var(--accent));
+  font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.post h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+.post-meta { margin-top: 14px; font-size: 14.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.post-lede { margin-top: 22px; font-size: 19px; line-height: 1.6; color: var(--ink); }
+
+.post { padding-bottom: 64px; }
+.post h2 {
+  font-size: clamp(23px, 3.4vw, 29px); line-height: 1.25; letter-spacing: -.015em;
+  margin: 46px 0 14px; text-wrap: balance;
+}
+.post h3 { font-size: 19px; margin: 30px 0 8px; }
+.post p { margin: 14px 0; }
+.post ul, .post ol { margin: 14px 0 14px 22px; }
+.post li { margin: 7px 0; }
+.post li::marker { color: var(--accent); font-weight: 700; }
+.post a { color: var(--accent-deep, var(--accent)); text-decoration: underline; text-underline-offset: 3px; }
+.post hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+
+.toc {
+  margin: 30px 0 8px; padding: 20px 22px; border: 1px solid var(--line);
+  border-radius: 18px; background: var(--bg-soft);
+}
+.toc h2 { font-size: 15px; margin: 0 0 10px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.toc ol { margin: 0 0 0 20px; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Screenshot: phone-sized, sits beside the text on wide screens. */
+.shot { margin: 26px 0; }
+.shot img {
+  display: block; width: 100%; max-width: 280px; height: auto; margin: 0 auto;
+  border: 1px solid var(--line); border-radius: 22px; background: var(--bg-soft);
+  box-shadow: var(--card-shadow);
+}
+.shot figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); text-align: center; }
+
+@media (min-width: 760px) {
+  .shot-side { display: grid; grid-template-columns: 280px 1fr; gap: 28px; align-items: start; }
+  .shot-side .shot { margin: 0; }
+  .shot-side figcaption { text-align: left; }
+  .shot-side .shot-body > :first-child { margin-top: 0; }
+  .shot-side-right { grid-template-columns: 1fr 280px; }
+  .shot-side-right .shot { order: 2; }
+}
+
+.callout {
+  margin: 26px 0; padding: 18px 20px; border-radius: 16px;
+  background: var(--accent-soft); border: 1px solid var(--line);
+}
+.callout p { margin: 0; }
+.callout strong { color: var(--accent-deep, var(--accent)); }
+
+.steps { counter-reset: step; list-style: none; margin-left: 0; }
+.steps li { position: relative; padding-left: 42px; margin: 14px 0; }
+.steps li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 0; top: 1px; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 14px;
+  display: grid; place-items: center;
+}
+
+.spec { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15.5px; }
+.spec th, .spec td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.spec th { font-weight: 700; width: 44%; }
+.spec td { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.post details {
+  border-bottom: 1px solid var(--line); padding: 14px 0;
+}
+.post details summary { cursor: pointer; font-weight: 700; list-style: none; }
+.post details summary::-webkit-details-marker { display: none; }
+.post details summary::after { content: "+"; float: right; color: var(--accent); font-weight: 700; }
+.post details[open] summary::after { content: "−"; }
+.post details p { margin: 10px 0 2px; color: var(--muted); }
+
+.post-cta {
+  margin: 46px 0 0; padding: 28px; border-radius: 22px;
+  background: var(--bg-soft); border: 1px solid var(--line); text-align: center;
+}
+.post-cta h2 { margin: 0 0 8px; }
+.post-cta p { color: var(--muted); margin-bottom: 18px; }
+.post-cta .btn + .btn { margin-left: 10px; }
+
+/* The site header is sticky — keep anchor targets clear of it. */
+.post [id] { scroll-margin-top: 92px; }
+
+/* Language switch — the article exists as two static pages, one per language. */
+.post-langs { display: flex; gap: 6px; align-items: center; margin: 0 0 16px; }
+.post-lang {
+  font-size: 13px; font-weight: 600; line-height: 1;
+  padding: 7px 12px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted);
+  text-decoration: none; transition: color .15s, border-color .15s;
+}
+.post-lang.active { background: var(--accent-soft); border-color: transparent; color: var(--accent-deep); }
+a.post-lang:hover, a.post-lang:focus-visible { color: var(--accent-deep); border-color: var(--accent); }
+
+/* ---- Video To Audio site ---- */
+/* style.css keeps the red --accent-deep of the site it was copied from; the
+   orange accent from studio.css needs its own readable link/kicker tone. */
+:root { --accent-deep: #B34A00; }
+@media (prefers-color-scheme: dark) { :root { --accent-deep: #FFA45A; } }
+
+/* "Short answer" box at the top of an article — the paragraph AI answers quote. */
+.answer {
+  margin: 26px 0; padding: 20px 22px; border-radius: 18px;
+  border: 1px solid var(--accent); background: var(--accent-soft);
+}
+.answer h2 { margin: 0 0 8px; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-deep); }
+.answer p, .answer ul { margin: 8px 0 0; }
+
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-scroll .spec { min-width: 520px; }
+.spec thead th { color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; width: auto; }
+
+/* Blog index */
+.post-list { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 16px; }
+.post-list li { margin: 0; }
+.post-card {
+  display: block; padding: 22px 24px; border: 1px solid var(--line); border-radius: 20px;
+  background: var(--bg-soft); color: var(--ink); text-decoration: none; transition: border-color .15s;
+}
+.post-card:hover, .post-card:focus-visible { border-color: var(--accent); }
+.post-card h3 { margin: 0 0 6px; font-size: 20px; line-height: 1.3; }
+.post-card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.post-card .post-meta { margin-top: 10px; font-size: 13.5px; }
+.post .post-card { text-decoration: none; }
+
+.related { margin-top: 40px; }

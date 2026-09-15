@@ -1,0 +1,21 @@
+# Everything on this site is public. Search engines and AI assistants are welcome.
+User-agent: *
+Allow: /
+Disallow: /dist/
+
+# AI search and assistant crawlers (explicit, so answers can cite the guides)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+Disallow: /dist/
+
+Sitemap: https://videomp4tomp3.fighttech.vn/sitemap.xml
