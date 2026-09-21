@@ -34,3 +34,15 @@ Key facts, stated as the app actually behaves:
 
 - [Blog index](https://videomp4tomp3.fighttech.vn/blog/)
 - [FightTech](https://fighttech.vn): the developer
+
+## Feature guides (Vietnamese, September 2026)
+[8 practical guides with app screenshots](https://videomp4tomp3.fighttech.vn/blog/).
+
+- [Preset Lưu nhạc: xuất MP3 320 kbps từ video](https://videomp4tomp3.fighttech.vn/blog/preset-luu-nhac-320-kbps.html): Dùng profile Lưu nhạc của Video MP4 to MP3 Converter để đặt sẵn MP3 320 kbps, stereo và kiểm tra chất lượng nguồn trước khi xuất.
+- [Preset Podcast: tách giọng nói thành MP3 mono](https://videomp4tomp3.fighttech.vn/blog/preset-podcast-giong-noi-mono.html): Dùng preset Podcast của Video MP4 to MP3 Converter với MP3 96 kbps, mono, chuẩn hóa và fade ngắn cho nguồn lời nói.
+- [Preset Nhạc chuông: dùng fade ngắn và chuẩn hóa](https://videomp4tomp3.fighttech.vn/blog/preset-nhac-chuong-fade-ngan.html): Chọn profile Nhạc chuông trong Video MP4 to MP3 Converter, kiểm tra fade đầu cuối và chọn đúng đoạn trước khi xuất.
+- [Preset Chia sẻ nhẹ: tạo audio nhỏ từ video](https://videomp4tomp3.fighttech.vn/blog/preset-chia-se-audio-nhe.html): Dùng profile Chia sẻ nhẹ với MP3 64 kbps mono trong Video MP4 to MP3 Converter và kiểm tra lời nói trước khi gửi.
+- [Tách audio lossless: khi nào không cần mã hóa lại?](https://videomp4tomp3.fighttech.vn/blog/tach-audio-lossless-khong-ma-hoa-lai.html): Hiểu chế độ giữ nguyên luồng âm thanh trong Video MP4 to MP3 Converter, các tùy chọn không áp dụng và giới hạn tương thích.
+- [Kiểm tra thiết lập Last used trước khi tách audio](https://videomp4tomp3.fighttech.vn/blog/kiem-tra-last-used-truoc-khi-xuat.html): Kiểm tra cấu hình được dùng gần nhất trong Video MP4 to MP3 Converter để tránh xuất nhạc với preset dành cho lời nói hoặc chia sẻ.
+- [Đánh dấu công cụ yêu thích trong Xưởng âm thanh](https://videomp4tomp3.fighttech.vn/blog/cong-cu-yeu-thich-trong-xuong-am-thanh.html): Dùng mục công cụ yêu thích trong Video MP4 to MP3 Converter để quay lại những thao tác thường dùng và giảm thời gian tìm kiếm.
+- [Tách WAV từ video để tiếp tục biên tập âm thanh](https://videomp4tomp3.fighttech.vn/blog/tach-wav-tu-video-de-bien-tap.html): Xuất audio từ video sang WAV bằng Video MP4 to MP3 Converter khi cần một tệp trung gian để đưa vào công cụ biên tập khác.
